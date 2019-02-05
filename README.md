@@ -1,6 +1,18 @@
 # 628-module1-group2
 This repository contains work related to STAT 628, instructed by Prof. Hyunseung Kang. We built a simple and robust model for predicting men's body fat percentage. 
 
+## Link to our web-based app
+- [Body fat percentage Calculator](https://zhendong.shinyapps.io/bodyfat_app/)
+
+## Prerequisite
+
+In order to perform regression with Huber loss, installation of the package *hqreg* is required.
+
+```
+install.packages("hqreg")
+```
+
+
 ## Summary
 *Bodyfat_summary.ipynb* is an summary of what we did presented in a Jupyter Notebook. The results shows that the percentage of body fat of a male is can be predicted by *Weight* and *Abdomen*.
 
