@@ -6,8 +6,9 @@ This repository contains work related to STAT 628, instructed by Prof. Hyunseung
 There are four folders providing more details in our main project, *code*, *image*, *data*.
 
 ### code
-There are 2 R code files:
- 
+There are two R code files:
+ *cleandata.R* cleans the data and produces some good looking plots for the distribution of some variables. 
+ *main.R* contains data analysis using linear regression with squared loss and Huber loss. It also produces plots for regression diagnosis. 
 
 
 * data.R visualized the data, removes outliers and divides the data into a train set and validation set. 
