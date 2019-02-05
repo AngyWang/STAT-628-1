@@ -1,6 +1,7 @@
 # 628-module1-group2
-This repository contains work related to STAT 628, instructed by Prof. Hyunseung Kang. We built a simple and robust model for predicting men's body fat percentage. It contains my collaboration work with my classmates Wenjia Xie and Zhendong Zhou.
+This repository contains work related to STAT 628, instructed by Prof. Hyunseung Kang. We built a simple and robust model for predicting men's body fat percentage. 
 
+## Summary
 *Bodyfat_summary.ipynb* is an summary of what we did presented in a Jupyter Notebook. The results shows that the percentage of body fat of a male is can be predicted by *Weight* and *Abdomen*.
 
 There are four folders providing more details in our main project, *code*, *image*, *data*.
