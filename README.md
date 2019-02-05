@@ -15,6 +15,12 @@ There are two R code files:
 ## Image
 This folder contains figures produced in our analysis.
 
+* Bodyfat.jpeg is the histogram of Bodyfat for the raw data.
+* Height.jpeg is the histogram of Height for the raw data.
+* Residual_plot.pdf is the residual plots for both squared loss and Huber loss.
+* Residual_plot_LSE.pdf is the residual plots for least square estimates.
+* Weight.jpeg is the histogram of Weight for the raw data.
+
 ## Data
 *BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
 
