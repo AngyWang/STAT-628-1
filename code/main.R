@@ -1,0 +1,36 @@
+library(MASS)
+library(hqreg)
+data=read.csv("BodyFat.csv")
+str(data)
+attach(data)
+data1 <- data[-which(data$BODYFAT == 0), ]
+#It is found that 42th data point has incorrect height. We impute it using BMI and weight.
+data1$HEIGHT[42] <- 69.5
+#By searching online, we found the most widely used predictors for bodyfat: ABDOMEN and WEIGHT. 
+lm1 <- lm(BODYFAT ~ ABDOMEN + WEIGHT, data = data1)
+pdf('Residual_plot_LSE', height = 6, width = 9)
+plot(lm1, which = 1, col = 'orange', pch = 16, main = 'Residuals vs Fitted for LSE')
+dev.off()
+summary(lm1)
+lm2 <- lm(BODYFAT ~ ABDOMEN, data = data1)
+plot(lm2)
+anova(lm1, lm2)
+data2 <- data1[, -c(1, 3)]
+lm3 <- lm(BODYFAT ~ ., data = data2)
+summary(lm3)
+plot(ABDOMEN, WEIGHT)
+# 
+huber1 <- hqreg(cbind(data1$WEIGHT, data1$ABDOMEN), data1$BODYFAT, nlambda = 2, lambda.min = 0)
+predict_huber <- predict(huber1, cbind(data1$WEIGHT, data1$ABDOMEN), lambda = 0)
+plot(predict_huber, data1$BODYFAT - predict_huber, ylim = c(-13, 13), xlim = c(5, 45))
+lowess1 <- lowess(predict_huber, data1$BODYFAT - predict(huber1, cbind(data1$WEIGHT, data1$ABDOMEN), lambda = 0))
+lowess2 <- lowess(predict(lm1), data1$BODYFAT - predict(lm1))
+pdf('Residual_plot', height = 6, width = 9)
+plot(predict(lm1), data1$BODYFAT - predict(lm1), ylim = c(-13, 13), xlim = c(5, 45), col = 'orange', pch = 16, xlab = 'Fitted value', ylab = 'Residual', main = 'Comparison of residual plots')
+lines(lowess2$x, lowess2$y, col = 'red', lwd = 2)
+lines(lowess1$x, lowess1$y, col = 'green', lwd = 2)
+abline(h = 0)
+points(predict_huber, data1$BODYFAT - predict_huber, ylim = c(-13, 13), xlim = c(5, 45), pch = 17, col = 'blue')
+legend('topright', legend = c('Square loss', 'Huber loss'), pch = c(16, 17), col = c('orange', 'blue'), cex = 0.8)
+legend('topleft', legend = c('Square loss', 'Huber loss'), lty = rep(1, 2), col = c('red', 'green'), cex = 0.8)
+dev.off()
