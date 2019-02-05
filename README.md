@@ -35,7 +35,7 @@ This folder contains figures produced in our analysis.
 * Forearm circumference (cm)  
 * Wrist circumference (cm)  
 
-*new_BodyFat.Rdata* is the Rdata after removing all outliers from the original dataset.
+*new_BodyFat.Rdata* is the Rdata file after data cleaning.
 
 ## Authors
 * **Linquan Ma** - (lma75@wisc.edu)
