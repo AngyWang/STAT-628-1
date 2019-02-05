@@ -11,14 +11,8 @@ There are two R code files:
 * cleandata.R cleans the data and produces some good looking plots for the distribution of some variables. 
 * main.R contains data analysis using linear regression with squared loss and Huber loss. It also produces plots for regression diagnosis. 
 
-
-* data.R visualized the data, removes outliers and divides the data into a train set and validation set. 
-* mlr.R constructs multiple linear models to predict BodyFat%. 
-* lasso.R uses Lasso method to do variable selection and constructs linear models to predict BodyFat%. 
-* multiplot.R works as a hearder file, which contains a plotting function helping us to make better graghs. 
-
 ### image
-This folder contains mainly the figures produced in our analysis.
+This folder contains figures produced in our analysis.
 
 ### data
 *BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
