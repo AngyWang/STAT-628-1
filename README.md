@@ -5,17 +5,17 @@ This repository contains work related to STAT 628, instructed by Prof. Hyunseung
 
 There are four folders providing more details in our main project, *code*, *image*, *data*.
 
-### code
+## Code
 There are two R code files:
 
 * cleandata.R cleans the data and produces some good looking plots for the distribution of some variables. 
 * main.R contains data analysis using linear regression with squared loss and Huber loss. It also produces plots for regression diagnosis. 
 
-### image
+## Image
 This folder contains figures produced in our analysis.
 
-### data
-* *BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
+## Data
+*BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
 
 * Percent body fat from Siri's (1956) equation  
 * Density determined from underwater weighing  
