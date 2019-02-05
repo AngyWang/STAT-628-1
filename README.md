@@ -7,8 +7,9 @@ There are four folders providing more details in our main project, *code*, *imag
 
 ### code
 There are two R code files:
- *cleandata.R* cleans the data and produces some good looking plots for the distribution of some variables. 
- *main.R* contains data analysis using linear regression with squared loss and Huber loss. It also produces plots for regression diagnosis. 
+
+* cleandata.R cleans the data and produces some good looking plots for the distribution of some variables. 
+* main.R contains data analysis using linear regression with squared loss and Huber loss. It also produces plots for regression diagnosis. 
 
 
 * data.R visualized the data, removes outliers and divides the data into a train set and validation set. 
