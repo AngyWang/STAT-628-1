@@ -15,24 +15,24 @@ There are two R code files:
 This folder contains figures produced in our analysis.
 
 ### data
-*BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
+* *BodyFat.csv* is the raw data set of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
 
-Percent body fat from Siri's (1956) equation  
-Density determined from underwater weighing  
-Age (years)  
-Weight (lbs)  
-Height (inches)  
-Adioposity (bmi)
-Neck circumference (cm)  
-Chest circumference (cm)  
-Abdomen 2 circumference (cm)  
-Hip circumference (cm)  
-Thigh circumference (cm)  
-Knee circumference (cm)  
-Ankle circumference (cm)  
-Biceps (extended) circumference (cm)  
-Forearm circumference (cm)  
-Wrist circumference (cm)  
+* Percent body fat from Siri's (1956) equation  
+* Density determined from underwater weighing  
+* Age (years)  
+* Weight (lbs)  
+* Height (inches)  
+* Adioposity (bmi)
+* Neck circumference (cm)  
+* Chest circumference (cm)  
+* Abdomen 2 circumference (cm)  
+* Hip circumference (cm)  
+* Thigh circumference (cm)  
+* Knee circumference (cm)  
+* Ankle circumference (cm)  
+* Biceps (extended) circumference (cm)  
+* Forearm circumference (cm)  
+* Wrist circumference (cm)  
 
 *new_BodyFat.Rdata* is the Rdata after removing all outliers from the original dataset.
 
